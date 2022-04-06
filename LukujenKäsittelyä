@@ -1,0 +1,25 @@
+from ast import Break
+
+
+print("Syötä kokonaislukuja, 0 lopettaa:")
+total = 0
+sum = 0
+pos = 0
+neg = 0
+
+while True:
+    luku = input("Luku: ")
+    luku = int(luku)
+    total += 1
+    sum += luku
+    if luku < 0:
+        neg += 1
+    if luku > 0:
+        pos += 1
+    if luku == 0:
+        break
+print("Lukuja yhteensä",total - 1)
+print("Lukujen summa", sum)
+print("Lukujen keskiarvo", sum / total)
+print("Positiivisia", pos)
+print("Negatiivisia", neg)
