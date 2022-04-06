@@ -1,0 +1,13 @@
+from math import sqrt
+a = input("Anna a: ")
+b = input("Anna b: ")
+c = input("Anna c: ")
+
+a = int(a)
+b = int(b)
+c = int(c)
+
+x = (-b + sqrt((b*b)-4*a*c))/(2*a)
+y = (-b - sqrt((b*b)-4*a*c))/(2*a)
+
+print("Juuret ovat", x, "ja", y)
