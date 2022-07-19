@@ -1,0 +1,8 @@
+lista1 = [1.233,2.344,3.455]
+lista2 = []
+def muutos(lista1: list):
+    for numero in lista1:
+        numero = "{:.2f}".format(numero)
+        lista2.append(numero)
+    print(lista2)
+muutos(lista1)
