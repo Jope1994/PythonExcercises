@@ -1,0 +1,5 @@
+lista1 = ["hip","hurraa","hip"]
+def pisin(lista1: list):
+    lista2 = sorted(lista1, key=len)
+    print(lista2[-1])
+pisin(lista1)
